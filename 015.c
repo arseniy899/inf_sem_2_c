@@ -31,11 +31,12 @@ char* removeDobChr(char * str)
     else
         return newStr;
 }
-void main()
+int main(int argc, char*argv[])
 {
     char str [STR_LENGTH] = {0};
     printf("Deleting two similar chars nearby");
     scanf("%[^\n]s",&str);
     printf("\nstr=%s",removeDobChr(str));
+	return 0;
 }
 
