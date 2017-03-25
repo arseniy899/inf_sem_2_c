@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #define STR_LENGTH 256
 char* removeDobChr(char * str)
