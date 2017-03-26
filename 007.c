@@ -35,4 +35,4 @@ void main()
         break;
     }
     printf("=%.2f\n",res);
-}
+} 

@@ -2,7 +2,7 @@
 #define STR_LENGTH 256
 char* removeDobChr(char * str)
 {
-    char newStr [STR_LENGTH];
+	char newStr[STR_LENGTH] = { 0 };
     int mask [STR_LENGTH];
     int strL = strlen(str);
     for(int i=0;i<strL-1;i++)
@@ -27,15 +27,17 @@ char* removeDobChr(char * str)
     //printf("\nstrL=%i,newSize=%i,newStr=%s",strL,newSize,newStr);
     if(strL+1< newSize)
         return removeDobChr(newStr);
-    else
-        return newStr;
+	else
+	{
+		strcpy(str,newStr);
+		return str;
+	}
 }
 int main(int argc, char*argv[])
 {
     char str [STR_LENGTH] = {0};
-    printf("Deleting two similar chars nearby");
+    printf("Deleting two similar chars nearby\n");
     scanf("%[^\n]s",&str);
     printf("\nstr=%s",removeDobChr(str));
 	return 0;
 }
-

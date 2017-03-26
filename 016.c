@@ -29,7 +29,7 @@ int main()
 	char a[] = "Hello, World!!!";
     char b[] = "Hi, Allegro!";
 	char c[] = "Tiu than hu!";
-	printf("\nstrncat=%s", strncat(b, a, 8));
+	printf("\strncpy=%s", strncpy(b, a, 8));
     printf("\nstrncat=%s", strncat(a, c, 8));
 	printf("\nstrcmp=%i", strcmp(a, c, 8));
 	return 0;
