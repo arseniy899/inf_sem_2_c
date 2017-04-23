@@ -102,7 +102,7 @@ void removeLast(const ArrayElement *arrayC)
 	}
 	
 }
-void clear(ArrayElement **arrayC)
+void clearArr(ArrayElement **arrayC)
 {
 	ArrayElement *cur = getLastEl(*arrayC);
 	while (cur)
