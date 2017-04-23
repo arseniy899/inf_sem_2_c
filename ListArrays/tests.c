@@ -44,7 +44,7 @@ int main()
 		printf("\narr[%i] = %i", i, (int)*get(arr, i));
 
 	printf("\nCLEARED\n");
-	clear(&arr);
+	clearArr(&arr);
 	for (int i = 0; i<arraySize(arr); i++)
 		printf("\narr[%i] = %i", i, (int)*get(arr, i));
 	return 0;
